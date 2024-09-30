@@ -1,6 +1,3 @@
-# vue-testApp
-
-This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
@@ -10,20 +7,16 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+### Steps to use the application
 
-```sh
+Git clone
+https://github.com/AishwaryaHegdeMS/Vue-D3-Tree/tree/master
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+npm run dev 
+  Open the localhost link in the browser 
 
-```sh
-npm run dev
-```
+Application loads with a tree like structure for the data mentioned in data.json
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+once you select any node it wil display further information about that node and we can deselect the node on clicking close icon in the sidebar
