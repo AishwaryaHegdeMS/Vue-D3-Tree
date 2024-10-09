@@ -1,5 +1,5 @@
 <template>
-    <div class="tree-wrapper">
+    <div>
       <svg ref="treeContainer"></svg>
     </div>
   </template>
@@ -90,6 +90,7 @@
           .attr("dy", ".35em")
           .attr("x", 0)
           .style("text-anchor", "middle")
+          .style("font-weight", "bold")
           .style("fill", "#333")
           .text((d) => d.data.name);
       },
@@ -102,7 +103,7 @@
   
         d3.select(event.currentTarget)
           .select("rect")
-          .attr("fill", "#ff6347");
+          .attr("fill", "#32cd32");
       this.$store.dispatch("updateSelectedNode",event.currentTarget);
       this.$store.dispatch("updateSelectedNodeData",node.data)
   }
@@ -111,10 +112,7 @@
   </script>
   
   <style scoped>
-  .tree-wrapper{
-      display: flex;
-      align-items: center;
-  }
+  
   .link {
     stroke: #ccc;
     stroke-width: 2px;

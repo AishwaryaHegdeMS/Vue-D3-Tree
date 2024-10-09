@@ -16,11 +16,13 @@ export default {
 <style scoped>
 .sidebar{
     height: auto;
-    width: 200px;
+    width: max-content;
     background: #fff;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 position: relative;
 padding: 10px;
+cursor: pointer;
+font-size: 20px;
 }
 button,close-btn{
     position: absolute;

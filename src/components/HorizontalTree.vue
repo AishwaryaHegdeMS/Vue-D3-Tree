@@ -1,12 +1,11 @@
 <template>
   <div class="tree-wrapper">
-    <Sidebar @closeSidebar="deSelectNode" v-if="selectedNodeData" :selectedNodeData="selectedNodeData"/>
     <D3Tree :formattedTreeData="formattedTreeData"/>
+    <Sidebar @closeSidebar="deSelectNode" v-if="selectedNodeData" :selectedNodeData="selectedNodeData"/>
   </div>
 </template>
 
 <script>
-import * as d3 from "d3";
 import data from "../mockData/data.json";
 import Sidebar from './Sidebar.vue'
 import D3Tree from "./D3Tree.vue";
@@ -54,5 +53,6 @@ formattedTreeData: []
 .tree-wrapper{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 </style>
