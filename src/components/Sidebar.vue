@@ -23,6 +23,7 @@ position: relative;
 padding: 10px;
 cursor: pointer;
 font-size: 20px;
+color: black;
 }
 button,close-btn{
     position: absolute;

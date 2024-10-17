@@ -20,3 +20,6 @@ npm run dev
 Application loads with a tree like structure for the data mentioned in data.json
 
 once you select any node it wil display further information about that node and we can deselect the node on clicking close icon in the sidebar
+
+To run the unit test
+  npm run test:unit
